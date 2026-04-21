@@ -13,6 +13,8 @@ def save_image(image):
     print("Image saved successfully!")
 
 image_path = "images/picture.jpg"
+
+# This will automatically download the model if it's not already in the models folder.
 model_path = "models/yolov8l.pt"
 
 pic = cv2.imread(image_path)
