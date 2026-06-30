@@ -15,10 +15,10 @@ def save_image(image):
 image_path = "images/picture.jpg"
 
 # This will automatically download the model if it's not already in the models folder.
-model_path = "models/yolov8l.pt"
+model_path = "models/yolo26l.pt"
 
 pic = cv2.imread(image_path)
-pic = resize(pic, 0.3)
+pic = resize(pic, 0.2)
 if pic is None:
     raise ValueError("Image not found! Check your path.")
 
